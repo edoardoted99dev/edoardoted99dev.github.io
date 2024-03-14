@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
 
-        document.getElementById("countdown-text").innerHTML = days + "g " + hours + "h "
+        document.getElementById("countdown-text").innerHTML = days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
 
         if (timeleft < 0) {
             clearInterval(countdownFunction);
             document.getElementById("countdown-text").innerHTML = "Il Ritorno di Sara è avvenuto!";
         }
-    }, 1000);
+    }, 0);
 });

@@ -15,6 +15,11 @@ body, html {
 }
 
 #countdown-text {
+    font-size: 1rem;
+    color: white;
+}
+
+#center-text {
     font-size: 2rem;
     color: white;
 }
